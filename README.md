@@ -1,7 +1,7 @@
 # Chicago_Airbnb_MLPipeline
  An ML pipeline to determine rental unit nightly charges showcased in Jupyter Notebooks
 
-The goal of this project was to maximize the revenue of Airbnb listings given the dataset found here: https://www.kaggle.com/datasets/jinbonnie/chicago-airbnb-open-data
+The goal of this project was to maximize the revenue of Airbnb listings given the dataset found [here](https://www.kaggle.com/datasets/jinbonnie/chicago-airbnb-open-data)
 
 My method was to build a model to predict the number of bookings in a year given other relevant features in the data. Using this model that has the nightly price as a feature, iteratively testing prices to see which has the highest predicted revenue (yearly bookings * nightly price) would be possible. Ulitmately, the model was unable to capture the relationship between the price and bookings well enough to drop predicted bookings low enough to get a nuanced listing price. Best listing prices suggested by the algorithm were hugely overestimated. 
 
