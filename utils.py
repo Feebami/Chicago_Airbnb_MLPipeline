@@ -52,7 +52,7 @@ def optimize_income(x):
     best_bookings = 0
     # Loop through prices and calculate revenue
     # Use log scale for price because price differences are less impactful at higher prices
-    for price in np.linspace(price_min, price_max, 100):
+    for price in np.logspace(np.log10(price_min), np.log10(price_max), 100):
         x['price'] = price
         x['log_price'] = np.log10(price)
         x['price^2'] = price ** 2
